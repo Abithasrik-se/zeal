@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+:root {
+  --z-black: #0a0a0a;
+  --z-ink: #151515;
+  --z-gold: #c89b18;
+  --z-gold-light: #e8c85a;
+  --z-cream: #fafaf7;
+  --z-white: #ffffff;
+  --z-muted: #666666;
+  --z-border: #e6e6e6;
+}
+
+@theme inline {
+  --color-z-black: var(--z-black);
+  --color-z-ink: var(--z-ink);
+  --color-z-gold: var(--z-gold);
+  --color-z-gold-light: var(--z-gold-light);
+  --color-z-cream: var(--z-cream);
+  --color-z-white: var(--z-white);
+  --color-z-muted: var(--z-muted);
+  --color-z-border: var(--z-border);
+  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--z-cream);
+  color: var(--z-ink);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--z-gold);
+  color: var(--z-black);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--z-gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.gold-glow {
+  box-shadow: 0 0 0 rgba(200, 155, 24, 0);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+.gold-glow:hover {
+  box-shadow: 0 8px 40px -8px rgba(200, 155, 24, 0.45);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(100deg, var(--z-gold) 0%, var(--z-gold-light) 45%, var(--z-gold) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.eyebrow {
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--z-gold);
+  font-weight: 600;
+}
+
+.container-z {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+@media (min-width: 768px) {
+  .container-z { padding-inline: 2.5rem; }
+}
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 40s linear infinite;
+}
+@keyframes spin-slow-rev {
+  to { transform: rotate(-360deg); }
+}
+.animate-spin-slow-rev {
+  animation: spin-slow-rev 55s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.link-underline {
+  position: relative;
+  background-image: linear-gradient(var(--z-gold), var(--z-gold));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.35s ease;
+}
+.link-underline:hover {
+  background-size: 100% 1px;
+}
