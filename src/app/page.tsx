@@ -10,9 +10,9 @@ import CTA from "@/components/home/CTA";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Zeal | International Trading, Sourcing & Supply Services",
+  title: "Zeal | Trading, Supply & Business Services",
   description:
-    "Zeal is a diversified trading and business services enterprise focused on sourcing, procurement, distribution and reliable supply across India, the United Kingdom and international markets.",
+    "Zeal Enterprises is a trading and business services enterprise focused on sourcing, procurement, distribution, supply and business facilitation.",
   path: "/",
 });
 

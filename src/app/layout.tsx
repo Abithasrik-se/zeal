@@ -17,22 +17,25 @@ import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: {
-    default: "Zeal | International Trading, Sourcing & Supply Services",
+    default: "Zeal | Trading, Supply & Business Services",
     template: "%s",
   },
   description: siteConfig.description,
   keywords: [
-    "international trading company",
-    "trading and supply",
-    "sourcing and procurement",
-    "distribution services",
-    "business facilitation",
     "Zeal Enterprises",
-    "India UK trading company",
+    "trading company",
+    "product sourcing",
+    "procurement",
+    "product supply",
+    "distribution",
+    "B2B trading",
+    "business services",
+    "Tamil Nadu trading company",
+    "business facilitation",
   ],
   authors: [{ name: siteConfig.legalName }],
   openGraph: {
-    title: "Zeal | International Trading, Sourcing & Supply Services",
+    title: "Zeal | Trading, Supply & Business Services",
     description: siteConfig.description,
     url: siteConfig.siteUrl,
     siteName: siteConfig.name,
@@ -42,7 +45,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zeal | International Trading, Sourcing & Supply Services",
+    title: "Zeal | Trading, Supply & Business Services",
     description: siteConfig.description,
   },
   icons: {

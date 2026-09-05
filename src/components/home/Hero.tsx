@@ -12,6 +12,11 @@ export default function Hero() {
         className="pointer-events-none absolute -top-24 -left-24 w-[420px] h-[420px] rounded-full opacity-[0.07]"
         style={{ background: "radial-gradient(circle, #C89B18 0%, transparent 70%)" }}
       />
+      <div
+        className="pointer-events-none absolute top-0 right-0 w-[520px] h-[520px] rounded-full opacity-[0.05] translate-x-1/3 -translate-y-1/3"
+        style={{ background: "radial-gradient(circle, #0A0A0A 0%, transparent 70%)" }}
+      />
+      <div className="pointer-events-none absolute inset-0 bg-grid-gold opacity-[0.35] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,black,transparent)]" />
       <div className="container-z grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative">
         <div className="lg:col-span-7">
           <motion.p
@@ -82,32 +87,44 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.2, ease: "easeOut" }}
-            className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96"
+            className="relative w-72 h-72 sm:w-96 sm:h-96 md:w-[26rem] md:h-[26rem]"
           >
             <div
               className="absolute inset-0 rounded-full"
               style={{
                 background:
-                  "radial-gradient(circle, rgba(232,200,90,0.16) 0%, rgba(250,250,247,0) 70%)",
+                  "radial-gradient(circle, rgba(232,200,90,0.2) 0%, rgba(250,250,247,0) 70%)",
               }}
             />
             <motion.div
-              className="absolute inset-6 rounded-full border border-z-gold/25"
+              className="absolute inset-4 rounded-full border border-z-gold/25"
               animate={{ rotate: 360 }}
               transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             />
             <motion.div
-              className="absolute inset-14 rounded-full border border-dashed border-z-gold/30"
+              className="absolute inset-12 rounded-full border border-dashed border-z-gold/30"
               animate={{ rotate: -360 }}
               transition={{ duration: 70, repeat: Infinity, ease: "linear" }}
             />
-            <Image
-              src="/images/zeal-mark.png"
-              alt="Zeal compass emblem — direction, trust, growth"
-              fill
-              priority
-              className="object-contain p-14 drop-shadow-[0_10px_40px_rgba(200,155,24,0.25)]"
-            />
+            <motion.div
+              className="absolute inset-0 flex items-center justify-center"
+              animate={{
+                filter: [
+                  "drop-shadow(0 10px 30px rgba(200,155,24,0.2))",
+                  "drop-shadow(0 10px 46px rgba(200,155,24,0.4))",
+                  "drop-shadow(0 10px 30px rgba(200,155,24,0.2))",
+                ],
+              }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <Image
+                src="/images/zeal-mark.png"
+                alt="Zeal compass emblem — direction, trust, growth"
+                fill
+                priority
+                className="object-contain p-12"
+              />
+            </motion.div>
           </motion.div>
         </div>
       </div>

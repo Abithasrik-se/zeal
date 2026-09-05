@@ -1,3 +1,4 @@
+/* src/app/globals.css — FULL FILE, replace entirely */
 @import "tailwindcss";
 
 :root {
@@ -107,6 +108,29 @@ select:focus-visible {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Glass / soft-shadow card used on dark banners for a premium feel */
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 0.5);
+}
+
+/* Layered gold/black mesh gradient for hero & banner sections */
+.bg-mesh-gold {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(232, 200, 90, 0.16) 0%, transparent 42%),
+    radial-gradient(circle at 88% 82%, rgba(200, 155, 24, 0.12) 0%, transparent 45%),
+    linear-gradient(160deg, #0a0a0a 0%, #121212 55%, #0a0a0a 100%);
+}
+
+.bg-grid-gold {
+  background-image: linear-gradient(rgba(200, 155, 24, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200, 155, 24, 0.08) 1px, transparent 1px);
+  background-size: 44px 44px;
 }
 
 .link-underline {

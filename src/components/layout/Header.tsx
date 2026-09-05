@@ -38,12 +38,12 @@ export default function Header() {
             <Image
               src="/images/zeal-mark.png"
               alt="Zeal logo"
-              width={40}
-              height={40}
+              width={48}
+              height={48}
               priority
-              className="w-9 h-9 md:w-10 md:h-10 object-contain transition-transform duration-500 group-hover:rotate-[18deg]"
+              className="w-11 h-11 md:w-12 md:h-12 object-contain transition-transform duration-500 group-hover:rotate-[18deg]"
             />
-            <span className="font-display font-extrabold text-xl md:text-2xl tracking-[0.15em] text-z-ink">
+            <span className="font-display font-extrabold text-2xl md:text-[1.7rem] tracking-[0.15em] text-z-ink">
               ZE<span className="text-z-gold">A</span>L
             </span>
           </Link>
