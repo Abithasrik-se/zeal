@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import AboutContent from "@/components/about/AboutContent";
-import InlineCTA from "@/components/ui/InlineCTA";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
@@ -14,7 +13,6 @@ export default function AboutPage() {
   return (
     <>
       <AboutContent />
-      <InlineCTA />
     </>
   );
 }
