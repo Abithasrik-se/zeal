@@ -13,6 +13,7 @@ export type Service = {
   benefits: { title: string; description: string }[];
   faqs: { q: string; a: string }[];
   featured?: boolean;
+  image: string;
 };
 
 export const services: Service[] = [
@@ -50,6 +51,7 @@ export const services: Service[] = [
       { q: "Who can work with Zeal on trading and supply?", a: "Businesses, institutions and organisations with a genuine sourcing or supply requirement are welcome to reach out and discuss their needs." },
       { q: "Which markets does Zeal serve?", a: "Zeal is oriented toward India, the United Kingdom and other international markets. Specific market coverage is confirmed on a case-by-case basis — see our Markets page." },
     ],
+    image: "/images/services/trading-supply.jpg",
     featured: true,
   },
   {
@@ -71,6 +73,7 @@ export const services: Service[] = [
       "Evaluate options against quality, pricing and reliability.",
       "Recommend and coordinate the preferred sourcing route.",
     ],
+    image: "/images/services/procurement-sourcing.jpg",
     whoFor: [
       "Businesses looking to diversify or improve their sourcing.",
       "Organisations evaluating new suppliers or categories.",
@@ -116,6 +119,7 @@ export const services: Service[] = [
     faqs: [
       { q: "How does Zeal manage delivery timelines?", a: "By confirming requirements upfront and coordinating each step of the distribution process toward the agreed timeline." },
     ],
+    image: "/images/services/distribution.jpg",
   },
   {
     slug: "business-facilitation",
@@ -147,6 +151,7 @@ export const services: Service[] = [
     faqs: [
       { q: "What kind of connections does Zeal facilitate?", a: "Connections relevant to the customer's specific business requirement — this is discussed and confirmed directly with each enquiry." },
     ],
+    image: "/images/services/business-facilitation.jpg",
   },
   {
     slug: "agency-commission-services",
@@ -178,6 +183,7 @@ export const services: Service[] = [
     faqs: [
       { q: "How are commission terms decided?", a: "Terms are discussed and agreed directly with each party based on the specific engagement." },
     ],
+    image: "/images/services/agency-commission-services.jpg",
   },
 ];
 

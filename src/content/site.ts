@@ -40,8 +40,7 @@ export const emailHref = (subject?: string, body?: string) => {
 export const mainNav = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Business", href: "/trading-supply" },
-  { label: "Services", href: "/why-zeal" },
+  { label: "Services", href: "/services" },
   { label: "Industries", href: "/industries" },
   { label: "Insights", href: "/insights" },
   { label: "Contact", href: "/contact" },
