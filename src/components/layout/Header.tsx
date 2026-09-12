@@ -36,15 +36,17 @@ export default function Header() {
         <div className="container-z flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2.5 shrink-0 group">
             <Image
-              src="/images/zeal-mark.png"
-              alt="Zeal logo"
-              width={48}
-              height={48}
-              priority
-              className="w-11 h-11 md:w-12 md:h-12 object-contain transition-transform duration-500 group-hover:rotate-[18deg]"
+            src="/images/zeal-mark.png"
+            alt="Zeal logo"
+            width={40}
+            height={40}
+            priority
+            className="w-9 h-9 md:w-10 md:h-10 object-contain transition-transform duration-500 group-hover:rotate-[18deg]"
             />
-            <span className="font-display font-extrabold text-2xl md:text-[1.7rem] tracking-[0.15em] text-z-ink">
-              ZE<span className="text-z-gold">A</span>L
+            <span className="font-display font-extrabold text-xl md:text-[1.2rem] tracking-[0.12em] text-z-ink">
+             ZE
+            <span className="bg-gradient-to-r from-[#C9A227] via-[#F4D76B] to-[#B8860B] bg-clip-text text-transparent">
+            A</span>L
             </span>
           </Link>
 

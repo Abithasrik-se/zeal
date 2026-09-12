@@ -3,7 +3,7 @@ export const siteConfig = {
   legalName: "Zeal Enterprises",
   tagline: "Guiding Business. Creating Opportunities.",
   description:
-    "Zeal is a diversified trading and business services enterprise focused on sourcing, procurement, distribution and reliable supply across India, the United Kingdom and international markets.",
+    "Zeal is a diversified trading and business services enterprise focused on sourcing, procurement, distribution and reliable supply across India and international markets.",
   url: "https://www.zealenterprises.example",
   siteUrl:
     process.env.NEXT_PUBLIC_SITE_URL || "https://www.zealenterprises.example",
@@ -20,7 +20,7 @@ export const siteConfig = {
   whatsapp: "918110807884",
   whatsappDisplay: "+91 81108 07884",
   whatsappDefaultMessage:
-    "Hello Zeal, I would like to discuss a trading, sourcing or supply requirement.",
+    "Hello Zeal, I would like to discuss further on your services:ading, sourcing or supply requirement.",
   emailDefaultSubject: "Business Enquiry — via Zeal Website",
   emailDefaultBody:
     "Hello Zeal team,\n\nI would like to discuss the following requirement:\n\n[Please describe your product / service / sourcing requirement here]\n\nCompany:\nCountry:\nPhone:\n\nRegards,",

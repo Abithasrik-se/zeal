@@ -14,6 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 pb-14 border-b border-white/10">
           <div className="md:col-span-4">
             <Link href="/" className="flex items-center gap-2.5">
+            <div className="w-11 h-11 bg-white rounded-full flex items-center justify-center">
                 <Image
                 src="/images/zeal-mark.png"
                 alt="Zeal logo"
@@ -21,6 +22,7 @@ export default function Footer() {
                 height={46}
                 className="w-11 h-11 object-contain"
               />
+              </div>
               <span className="font-display font-extrabold text-2xl tracking-[0.15em] text-white">
                 ZE<span className="text-z-gold">A</span>L
               </span>
