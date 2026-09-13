@@ -144,3 +144,110 @@ select:focus-visible {
   background-size: 100% 2px;
 }
 
+
+/* =========================================================
+   ZEAL COMPASS LOADER
+========================================================= */
+
+@keyframes zealOuterRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes zealInnerRotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes zealNeedleMove {
+  0% {
+    transform: rotate(-25deg);
+  }
+
+  25% {
+    transform: rotate(55deg);
+  }
+
+  50% {
+    transform: rotate(145deg);
+  }
+
+  75% {
+    transform: rotate(235deg);
+  }
+
+  100% {
+    transform: rotate(335deg);
+  }
+}
+
+@keyframes zealLogoBreath {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(0.96);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.04);
+  }
+}
+
+@keyframes zealPulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+}
+
+.zeal-loader-outer {
+  animation: zealOuterRotate 14s linear infinite;
+}
+
+.zeal-loader-dashed {
+  animation: zealInnerRotate 10s linear infinite;
+}
+
+.zeal-loader-inner {
+  animation: zealOuterRotate 8s linear infinite;
+}
+
+.zeal-loader-needle {
+  animation: zealNeedleMove 5s cubic-bezier(0.45, 0, 0.25, 1)
+    infinite;
+  transform-origin: center;
+}
+
+.zeal-loader-logo {
+  animation: zealLogoBreath 3.5s ease-in-out infinite;
+}
+
+.zeal-loader-pulse {
+  animation: zealPulse 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zeal-loader-outer,
+  .zeal-loader-dashed,
+  .zeal-loader-inner,
+  .zeal-loader-needle,
+  .zeal-loader-logo,
+  .zeal-loader-pulse {
+    animation: none;
+  }
+}

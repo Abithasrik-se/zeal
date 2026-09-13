@@ -5,9 +5,54 @@ export type Placeholder = {
 };
 
 export const productCategories: Placeholder[] = [
-  { slug: "category-01", label: "Product Category 01", description: "Description to be provided by client." },
-  { slug: "category-02", label: "Product Category 02", description: "Description to be provided by client." },
-  { slug: "category-03", label: "Product Category 03", description: "Description to be provided by client." },
+  {
+    slug: "dairy-products",
+    label: "Dairy Products",
+    description:
+      "Dairy products sourced and supplied according to specific customer and business requirements.",
+  },
+  {
+    slug: "jaggery",
+    label: "Jaggery",
+    description:
+      "Jaggery sourcing and supply for suitable business and commercial requirements.",
+  },
+  {
+    slug: "salt",
+    label: "Salt",
+    description:
+      "Salt and related essential commodity supply based on product and quantity requirements.",
+  },
+  {
+    slug: "rice",
+    label: "Rice",
+    description:
+      "Rice sourcing and supply across suitable varieties and requirements.",
+  },
+  {
+    slug: "dry-fruits-nuts",
+    label: "Dry Fruits & Nuts",
+    description:
+      "Dry fruits and nuts sourced for suitable commercial and business requirements.",
+  },
+  {
+    slug: "pulses",
+    label: "Pulses",
+    description:
+      "Pulses and related food commodities sourced according to requirement.",
+  },
+  {
+    slug: "spices",
+    label: "Spices",
+    description:
+      "Spices sourced and supplied based on product specifications and business requirements.",
+  },
+  {
+    slug: "building-materials",
+    label: "Building Materials",
+    description:
+      "Building and construction-related materials sourced according to project and supply requirements.",
+  },
 ];
 
 export const industryCategories: Placeholder[] = [
@@ -28,3 +73,4 @@ export const markets: Market[] = [
   { slug: "united-kingdom", label: "United Kingdom", status: "confirmed", description: "An international market Zeal is oriented toward for trading and business services." },
   { slug: "other-international-markets", label: "Other International Markets", status: "tbc", description: "Specific additional markets to be confirmed." },
 ];
+

@@ -41,7 +41,7 @@ export const mainNav = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Industries", href: "/industries" },
+  { label: "Products", href: "/products" },
   { label: "Insights", href: "/insights" },
   { label: "Contact", href: "/contact" },
 ];
@@ -50,7 +50,7 @@ export const footerNav = {
   company: [
     { label: "About Zeal", href: "/about" },
     { label: "Why Zeal", href: "/why-zeal" },
-    { label: "Markets", href: "/markets" },
+    { label: "Products", href: "/products" },
     { label: "Insights", href: "/insights" },
     { label: "Contact", href: "/contact" },
   ],

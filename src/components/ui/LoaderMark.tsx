@@ -19,7 +19,7 @@ export default function LoaderMark({ size = 84 }: { size?: number }) {
         src="/images/zeal-mark.png"
         alt=""
         aria-hidden="true"
-        className="relative w-1/2 h-1/2 object-contain drop-shadow-[0_0_10px_rgba(200,155,24,0.35)]"
+        className="relative w-3/4 h-3/4 object-contain drop-shadow-[0_0_10px_rgba(200,155,24,0.35)]"
       />
       <span className="sr-only">Loading Zeal…</span>
     </div>
