@@ -217,7 +217,7 @@ export default function ProductsPage() {
                         src={image}
                         alt={`${category.label} products supplied by Zeal`}
                         fill
-                        priority={index < 2}
+                        priority={index == 0}
                         sizes="
                           (max-width: 640px) 100vw,
                           (max-width: 1024px) 50vw,

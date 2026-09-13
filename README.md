@@ -19,8 +19,7 @@ npm run build
 npm run start
 ```
 
-Fully static-friendly — deploys cleanly to **Vercel** (recommended) or any
-Node hosting.
+
 
 ## Editing content (no code changes needed)
 
