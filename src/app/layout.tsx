@@ -16,38 +16,74 @@ import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
+
   title: {
-    default: "Zeal | Trading, Supply & Business Services",
-    template: "%s",
+    default: "ZEAL | Trading, Supply & Business Services",
+    template: "%s | ZEAL",
   },
+
   description: siteConfig.description,
+
   keywords: [
-    "Zeal Enterprises",
+    "ZEAL",
+    "ZEAL Enterprises",
     "trading company",
     "product sourcing",
-    "procurement",
+    "procurement services",
     "product supply",
     "distribution",
     "B2B trading",
+    "business facilitation",
+    "international trading",
+    "sourcing and procurement",
     "business services",
     "Tamil Nadu trading company",
-    "business facilitation",
+    "India trading company",
   ],
-  authors: [{ name: siteConfig.legalName }],
+
+  authors: [
+    {
+      name: siteConfig.legalName,
+    },
+  ],
+
+  creator: siteConfig.legalName,
+
+  publisher: siteConfig.legalName,
+
+  alternates: {
+    canonical: siteConfig.siteUrl,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
   openGraph: {
-    title: "Zeal | Trading, Supply & Business Services",
+    title: "ZEAL | Trading, Supply & Business Services",
     description: siteConfig.description,
     url: siteConfig.siteUrl,
     siteName: siteConfig.name,
-    images: [{ url: siteConfig.ogImage, width: 1200, height: 630 }],
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: "ZEAL - Trading, Supply and Business Services",
+      },
+    ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Zeal | Trading, Supply & Business Services",
+    title: "ZEAL | Trading, Supply & Business Services",
     description: siteConfig.description,
+    images: [siteConfig.ogImage],
   },
+
   icons: {
     icon: "/images/zeal-mark.png",
     apple: "/images/zeal-mark.png",

@@ -2,63 +2,106 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/content/site";
 import { services } from "@/content/services";
 import { insights } from "@/content/insights";
-import { productCategories, industryCategories, markets } from "@/content/placeholders";
+import {
+  productCategories,
+  industryCategories,
+  markets,
+} from "@/content/placeholders";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = siteConfig.siteUrl;
-  const now = new Date();
+  const base = siteConfig.siteUrl.replace(/\/$/, "");
 
-  const staticPages = [
-    "",
-    "/about",
-    "/why-zeal",
-    "/products",
-    "/industries",
-    "/markets",
-    "/insights",
-    "/contact",
-    "/privacy-policy",
-    "/terms-conditions",
-  ].map((p) => ({
-    url: `${base}${p}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: p === "" ? 1 : 0.7,
+  const staticPages: MetadataRoute.Sitemap = [
+    {
+      url: base,
+      changeFrequency: "monthly",
+      priority: 1,
+    },
+    {
+      url: `${base}/about`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/why-zeal`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/products`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/industries`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/services`,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/markets`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/insights`,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/contact`,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${base}/privacy-policy`,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${base}/terms-conditions`,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+  ];
+
+  const servicePages: MetadataRoute.Sitemap = services.map((service) => ({
+    url: `${base}/${service.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.8,
   }));
 
-  const servicePages = services.map((s) => ({
-    url: `${base}/${s.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.9,
-  }));
+  const productPages: MetadataRoute.Sitemap = productCategories.map(
+    (category) => ({
+      url: `${base}/products/${category.slug}`,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    })
+  );
 
-  const productPages = productCategories.map((c) => ({
-    url: `${base}/products/${c.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.5,
-  }));
+  const industryPages: MetadataRoute.Sitemap = industryCategories.map(
+    (industry) => ({
+      url: `${base}/industries/${industry.slug}`,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    })
+  );
 
-  const industryPages = industryCategories.map((c) => ({
-    url: `${base}/industries/${c.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.5,
-  }));
-
-  const marketPages = markets.map((m) => ({
-    url: `${base}/markets/${m.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.5,
-  }));
-
-  const insightPages = insights.map((a) => ({
-    url: `${base}/insights/${a.slug}`,
-    lastModified: a.updated || a.date,
-    changeFrequency: "yearly" as const,
+  const marketPages: MetadataRoute.Sitemap = markets.map((market) => ({
+    url: `${base}/markets/${market.slug}`,
+    changeFrequency: "monthly",
     priority: 0.6,
+  }));
+
+  const insightPages: MetadataRoute.Sitemap = insights.map((insight) => ({
+    url: `${base}/insights/${insight.slug}`,
+    lastModified: insight.updated || insight.date,
+    changeFrequency: "yearly",
+    priority: 0.5,
   }));
 
   return [
