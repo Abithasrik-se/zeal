@@ -74,7 +74,7 @@ export default function Hero() {
             className="mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4"
           >
             <Link
-              href="/trading-supply"
+              href="/products"
               className="gold-glow inline-flex w-full items-center justify-center gap-2 rounded-full bg-z-black px-6 py-3.5 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5 sm:w-auto"
             >
               Explore Our Business
