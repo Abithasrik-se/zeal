@@ -21,7 +21,7 @@ export const insights: Insight[] = [
     author: "Zeal Editorial Team",
     readTime: "5 min read",
     image:"/images/insights/international-trading-supply.jpg",
-    relatedService: "trading-supply",
+    relatedService: "services/trading-supply",
     content: [
       "International trading and supply is, at its core, about moving the right products from a reliable source to the business or institution that needs them — reliably, and at a fair price.",
       "For businesses new to cross-border sourcing, the process typically starts with a clear understanding of the requirement: what is needed, in what quantity, to what quality standard, and by when.",
@@ -38,7 +38,7 @@ export const insights: Insight[] = [
     author: "Zeal Editorial Team",
     readTime: "4 min read",
     image:"/images/insights/strategic-sourcing.jpg",
-    relatedService: "procurement-sourcing",
+    relatedService: "services/procurement-sourcing",
     content: [
       "Strategic sourcing is the practice of evaluating suppliers not only on price, but on reliability, quality consistency and their ability to scale with a growing requirement.",
       "A structured approach typically involves defining requirements precisely, researching a shortlist of credible sources, and weighing trade-offs between cost, quality and lead time.",
@@ -55,7 +55,7 @@ export const insights: Insight[] = [
     readTime: "4 min read",
     image:
       "/images/insights/choosing-a-trading-and-supply-partner.jpg",
-    relatedService: "business-facilitation",
+    relatedService: "services/business-facilitation",
     content: [
       "Choosing a trading and supply partner is a decision that affects timelines, quality and, ultimately, customer satisfaction — so it is worth approaching deliberately.",
       "Beyond competitive pricing, look for clear and consistent communication, a transparent approach to sourcing decisions, and a willingness to explain how requirements will be met.",

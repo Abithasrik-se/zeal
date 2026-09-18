@@ -131,7 +131,7 @@ export default function BusinessOverview() {
 
           <Reveal className="h-full md:row-span-2 lg:col-span-6">
             <Link
-              href={`/${featured.slug}`}
+              href={`services/${featured.slug}`}
               className="group relative flex h-full min-h-[390px] flex-col justify-between overflow-hidden rounded-2xl bg-z-black p-7 text-white shadow-[0_25px_70px_-35px_rgba(0,0,0,0.45)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_35px_80px_-35px_rgba(0,0,0,0.5)] sm:min-h-[430px] sm:p-9 md:p-10"
             >
               {/* Gold glow */}
